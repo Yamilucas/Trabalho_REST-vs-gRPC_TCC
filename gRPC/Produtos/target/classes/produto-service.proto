@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package tcc.gRPC.Produtos;
+
+option java_package = "tcc.gRPC.Produtos.generated";
+option java_multiple_files = true;
+
+message Produto {
+  int64 id = 1;
+  string nome = 2;
+  int32 quantidade = 3;
+  double valor = 4;
+}
+
+message GetProdutoRequest {
+  int64 id = 1;
+}
+
+message CreateProdutoRequest {
+  string nome = 1;
+  int32 quantidade = 2;
+  double valor = 3;
+}
+
+message UpdateProdutoRequest {
+  int64 id = 1;
+  string nome = 2;
+  int32 quantidade = 3;
+  double valor = 4;
+}
+
+message DeleteProdutoRequest {
+  int64 id = 1;
+}
+
+message ListaProdutosResponse {
+  repeated Produto produtos = 1;
+}
+
+message InsercaoMultiplaRequest {
+  int32 quantidade = 1;
+}
+
+message RespostaMensagem {
+  string mensagem = 1;
+}
+
+message Vazio {}
+
+service ProdutoService {
+  // Operações individuais
+  rpc criarProdutoIndividual(CreateProdutoRequest) returns (Produto);
+  rpc UpdateProduto(UpdateProdutoRequest) returns (Produto);
+  rpc buscarPorId(GetProdutoRequest) returns (Produto);
+  rpc deletarPorId(DeleteProdutoRequest) returns (RespostaMensagem);
+
+  // Operações em massa
+  rpc listarTodos(Vazio) returns (ListaProdutosResponse);
+  rpc inserirMultiplosProdutos(InsercaoMultiplaRequest) returns (RespostaMensagem);
+  rpc multiplosUpdates(Vazio) returns (RespostaMensagem);
+  rpc deletarTodosProdutos(Vazio) returns (RespostaMensagem);
+}
