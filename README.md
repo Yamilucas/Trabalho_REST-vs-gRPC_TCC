@@ -1,6 +1,6 @@
 # Trabalho de TCC – gRPC vs API REST
 
-**Orientador:** Valter Ribeiro Lima Jr.
+**Orientador:** Prof. Me. Valter Ribeiro Lima Júnior
 
 ## Descrição
 
@@ -15,3 +15,4 @@ Projeto de Trabalho de Conclusão de Curso que compara o desempenho entre **gRPC
 - **SQL**
 - **REST**
 - **gRPC**
+
