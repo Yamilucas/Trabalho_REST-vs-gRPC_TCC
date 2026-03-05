@@ -4,9 +4,7 @@
 
 ## Descrição
 
-Projeto de Trabalho de Conclusão de Curso que compara o desempenho entre **gRPC** e **API REST** em aplicações desenvolvidas com **Java e Spring Boot**, analisando aspectos como comunicação, eficiência e consumo de recursos.
-
-## Tecnologias Utilizadas
+Projeto de Trabalho de Conclusão de Curso que compara o desempenho entre **gRPC** e **API REST** em aplicações desenvolvidas com **Java e Spring Boot**.
 
 - **Java**
 - **Spring Boot**
@@ -16,7 +14,8 @@ Projeto de Trabalho de Conclusão de Curso que compara o desempenho entre **gRPC
 - **REST**
 - **gRPC**
 - **Hibernate**
-- -**Postman**
+- **Postman**
+
 
 
 
