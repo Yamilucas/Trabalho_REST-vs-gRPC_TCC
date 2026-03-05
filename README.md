@@ -15,4 +15,6 @@ Projeto de Trabalho de Conclusão de Curso que compara o desempenho entre **gRPC
 - **SQL**
 - **REST**
 - **gRPC**
+- **Hibernate**
+
 
