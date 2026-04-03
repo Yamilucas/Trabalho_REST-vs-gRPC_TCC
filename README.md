@@ -253,7 +253,7 @@ Basicamente, para alcançar os resultados, o autor utilizou os dados armazenados
 
 A variação percentual é calculada pela seguinte fórmula:
 
-\text{Variação (%)} = \left(\frac{T_b - T_a}{T_b}\right) \times 100
+> **Variação (%) = ((Tb - Ta) / Tb) × 100**
 
 Onde:
 
